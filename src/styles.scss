@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App{
+    font-family: 'DM Sans', sans-serif;
+    background-color: rgb(255, 240, 221);
+    min-height: 100vh;
+    position: relative;
+}
+
+.container{
+    min-width: 450px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.costs{
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+    .content{
+        display: flex;
+        justify-content: space-between;
+        padding: 6%;
+        color: white;
+
+        .balance{
+            p{
+                font-size: 17px;
+            }
+
+            h3{
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+.expenses{
+    background-color: white;
+    border-radius: 15px;
+
+    .textContent{
+        padding: 6%;
+
+        h1{
+            font-size: 25px;
+        }
+
+        .week_expenses{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            .mon, .tue, .wed, .thu, .fri, .sat, .sun{
+                text-align: center;
+
+                div{
+                    width: 40px;
+                    margin-top: 40px;
+                    background-color: hsl(10, 79%, 65%);
+
+                    &:hover{
+                        background-color: rgb(59, 175, 175);
+                        cursor: pointer;
+                    }
+                }
+
+                p{
+                    color: rgb(165, 165, 165);
+                    font-weight: 700;
+                }
+            }
+
+            .mon{
+                div{
+                    height: 20px;
+                }
+            }
+
+            .tue{
+                div{
+                    height: 65px;
+                }
+            }
+
+            .wed{
+                div{
+                    height: 95px;
+                }
+            }
+
+            .thu{
+                div{
+                    height: 53px;
+                }
+            }
+
+            .fri{
+                div{
+                    height: 45px;
+                }
+            }
+
+            .sat{
+                div{
+                    height: 85px;
+                }
+            }
+
+            .sun{
+                div{
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    hr{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .balance{
+        display: flex;
+        justify-content: space-between;
+
+        .total{
+            p{
+                color: gray;
+            }
+
+            h3{
+                font-size: 40px;
+                color: rgb(37, 14, 14);
+            }
+        }
+
+        .last_month{
+            direction: rtl;
+
+            h6{
+                font-size: 20px;
+                margin-top: 16px;
+                color: rgb(37, 14, 14);
+            }
+
+            p{
+                color: gray;
+            }
+        }
+    }
+}

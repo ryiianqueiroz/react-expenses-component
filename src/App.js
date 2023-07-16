@@ -13,7 +13,7 @@ function App() {
               <h3>$921.48</h3>
             </div>
             
-            <img src={Logo} alt="#" />
+            <img src={Logo} alt="#" className='logo' />
           
           </div>
         </div>
@@ -24,31 +24,45 @@ function App() {
             
             <div className="week_expenses">
               <div className="mon">
-                <div className='mon_padding'></div>
+                <div className='mon_padding'>
+                  <h4 className='price_monthly'>$12.36</h4>
+                </div>
                 <p>mon</p>
               </div>
               <div className="tue">
-                <div className='tue_padding'></div>
+                <div className='tue_padding'>
+                  <h4 className='price_monthly'>$35.51</h4>
+                </div>
                 <p>tue</p>
               </div>
               <div className="wed">
-                <div className='wed_padding'></div>
+                <div className='wed_padding'>
+                  <h4 className='price_monthly'>$52.36</h4>
+                </div>
                 <p>wed</p>
               </div>
               <div className="thu">
-                <div className='thu_padding'></div>
+                <div className='thu_padding'>
+                  <h4 className='price_monthly'>$31.07</h4>
+                </div>
                 <p>thu</p>
               </div>
               <div className="fri">
-                <div className='fri_padding'></div>
+                <div className='fri_padding'>
+                  <h4 className='price_monthly'>$28.40</h4>
+                </div>
                 <p>fri</p>
               </div>
               <div className="sat">
-                <div className='sat_padding'></div>
+                <div className='sat_padding'>
+                  <h4 className='price_monthly'>$48.40</h4>
+                </div>
                 <p>sat</p>
               </div>
               <div className="sun">
-                <div className='sun_padding'></div>
+                <div className='sun_padding'>
+                  <h4 className='price_monthly'>$26.21</h4>
+                </div>
                 <p>sun</p>
               </div>
             </div>

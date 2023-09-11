@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: "DM Sans", sans-serif;
+  background-color: rgb(255, 240, 221);
+  min-height: 100vh;
+  position: relative;
+}
+
+.container {
+  min-width: 450px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.costs {
+  background-color: hsl(10deg, 79%, 65%);
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.costs .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 6%;
+  color: white;
+}
+.costs .content .balance p {
+  font-size: 17px;
+}
+.costs .content .balance h3 {
+  font-size: 30px;
+}
+
+.expenses {
+  background-color: white;
+  border-radius: 15px;
+}
+.expenses .textContent {
+  padding: 6%;
+}
+.expenses .textContent h1 {
+  font-size: 25px;
+}
+.expenses .textContent .week_expenses {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.expenses .textContent .week_expenses .mon, .expenses .textContent .week_expenses .tue, .expenses .textContent .week_expenses .wed, .expenses .textContent .week_expenses .thu, .expenses .textContent .week_expenses .fri, .expenses .textContent .week_expenses .sat, .expenses .textContent .week_expenses .sun {
+  text-align: center;
+}
+.expenses .textContent .week_expenses .mon div, .expenses .textContent .week_expenses .tue div, .expenses .textContent .week_expenses .wed div, .expenses .textContent .week_expenses .thu div, .expenses .textContent .week_expenses .fri div, .expenses .textContent .week_expenses .sat div, .expenses .textContent .week_expenses .sun div {
+  width: 40px;
+  margin-top: 40px;
+  background-color: hsl(10deg, 79%, 65%);
+}
+.expenses .textContent .week_expenses .mon div h4, .expenses .textContent .week_expenses .tue div h4, .expenses .textContent .week_expenses .wed div h4, .expenses .textContent .week_expenses .thu div h4, .expenses .textContent .week_expenses .fri div h4, .expenses .textContent .week_expenses .sat div h4, .expenses .textContent .week_expenses .sun div h4 {
+  display: none;
+}
+.expenses .textContent .week_expenses .mon div:hover, .expenses .textContent .week_expenses .tue div:hover, .expenses .textContent .week_expenses .wed div:hover, .expenses .textContent .week_expenses .thu div:hover, .expenses .textContent .week_expenses .fri div:hover, .expenses .textContent .week_expenses .sat div:hover, .expenses .textContent .week_expenses .sun div:hover {
+  background-color: rgb(59, 175, 175);
+  cursor: pointer;
+}
+.expenses .textContent .week_expenses .mon div:hover h4, .expenses .textContent .week_expenses .tue div:hover h4, .expenses .textContent .week_expenses .wed div:hover h4, .expenses .textContent .week_expenses .thu div:hover h4, .expenses .textContent .week_expenses .fri div:hover h4, .expenses .textContent .week_expenses .sat div:hover h4, .expenses .textContent .week_expenses .sun div:hover h4 {
+  display: block;
+  color: white;
+  background-color: black;
+  position: absolute;
+  margin-top: -30px;
+  margin-left: -5px;
+  padding: 4px;
+  font-size: 13px;
+  border-radius: 5px;
+}
+.expenses .textContent .week_expenses .mon p, .expenses .textContent .week_expenses .tue p, .expenses .textContent .week_expenses .wed p, .expenses .textContent .week_expenses .thu p, .expenses .textContent .week_expenses .fri p, .expenses .textContent .week_expenses .sat p, .expenses .textContent .week_expenses .sun p {
+  color: rgb(165, 165, 165);
+  font-weight: 700;
+}
+.expenses .textContent .week_expenses .mon div {
+  height: 20px;
+}
+.expenses .textContent .week_expenses .tue div {
+  height: 65px;
+}
+.expenses .textContent .week_expenses .wed div {
+  height: 95px;
+}
+.expenses .textContent .week_expenses .thu div {
+  height: 53px;
+}
+.expenses .textContent .week_expenses .fri div {
+  height: 45px;
+}
+.expenses .textContent .week_expenses .sat div {
+  height: 85px;
+}
+.expenses .textContent .week_expenses .sun div {
+  height: 40px;
+}
+.expenses hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.expenses .balance {
+  display: flex;
+  justify-content: space-between;
+}
+.expenses .balance .total p {
+  color: gray;
+}
+.expenses .balance .total h3 {
+  font-size: 40px;
+  color: rgb(37, 14, 14);
+}
+.expenses .balance .last_month {
+  direction: rtl;
+}
+.expenses .balance .last_month h6 {
+  font-size: 20px;
+  margin-top: 16px;
+  color: rgb(37, 14, 14);
+}
+.expenses .balance .last_month p {
+  color: gray;
+}
+
+@media screen and (max-width: 1024px) {
+  .expenses .textContent .week_expenses .mon div:hover h4, .expenses .textContent .week_expenses .tue div:hover h4, .expenses .textContent .week_expenses .wed div:hover h4, .expenses .textContent .week_expenses .thu div:hover h4, .expenses .textContent .week_expenses .fri div:hover h4, .expenses .textContent .week_expenses .sat div:hover h4, .expenses .textContent .week_expenses .sun div:hover h4 {
+    margin-left: -5px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    min-width: 320px;
+  }
+  .costs .content .balance p {
+    font-size: 14px;
+  }
+  .costs .content .balance h3 {
+    font-size: 26px;
+  }
+  .costs .content .logo {
+    width: 70px;
+    height: 40px;
+    align-self: center;
+  }
+  .expenses {
+    background-color: white;
+    border-radius: 15px;
+  }
+  .expenses .textContent {
+    padding: 6%;
+  }
+  .expenses .textContent h1 {
+    font-size: 23px;
+  }
+  .expenses .textContent .week_expenses .mon div, .expenses .textContent .week_expenses .tue div, .expenses .textContent .week_expenses .wed div, .expenses .textContent .week_expenses .thu div, .expenses .textContent .week_expenses .fri div, .expenses .textContent .week_expenses .sat div, .expenses .textContent .week_expenses .sun div {
+    width: 30px;
+    margin-top: 60px;
+  }
+  .expenses .textContent .week_expenses .mon div:hover h4, .expenses .textContent .week_expenses .tue div:hover h4, .expenses .textContent .week_expenses .wed div:hover h4, .expenses .textContent .week_expenses .thu div:hover h4, .expenses .textContent .week_expenses .fri div:hover h4, .expenses .textContent .week_expenses .sat div:hover h4, .expenses .textContent .week_expenses .sun div:hover h4 {
+    padding: 3px;
+    font-size: 10px;
+    margin-left: -5px;
+  }
+  .expenses .textContent .week_expenses .mon p, .expenses .textContent .week_expenses .tue p, .expenses .textContent .week_expenses .wed p, .expenses .textContent .week_expenses .thu p, .expenses .textContent .week_expenses .fri p, .expenses .textContent .week_expenses .sat p, .expenses .textContent .week_expenses .sun p {
+    color: rgb(165, 165, 165);
+    font-weight: 700;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .expenses .textContent .week_expenses .mon div {
+    height: 30px;
+  }
+  .expenses .textContent .week_expenses .tue div {
+    height: 80px;
+  }
+  .expenses .textContent .week_expenses .wed div {
+    height: 115px;
+  }
+  .expenses .textContent .week_expenses .thu div {
+    height: 73px;
+  }
+  .expenses .textContent .week_expenses .fri div {
+    height: 55px;
+  }
+  .expenses .textContent .week_expenses .sat div {
+    height: 95px;
+  }
+  .expenses .textContent .week_expenses .sun div {
+    height: 60px;
+  }
+  .expenses .balance {
+    display: flex;
+    justify-content: space-between;
+  }
+  .expenses .balance .total p {
+    color: gray;
+    font-size: 15px;
+  }
+  .expenses .balance .total h3 {
+    font-size: 35px;
+  }
+  .expenses .balance .last_month h6 {
+    font-size: 15px;
+    margin-top: 16px;
+  }
+  .expenses .balance .last_month p {
+    color: gray;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    min-width: 265px;
+  }
+  .costs .content .balance p {
+    font-size: 12px;
+  }
+  .costs .content .balance h3 {
+    font-size: 20px;
+  }
+  .costs .content .logo {
+    width: 50px;
+    height: 30px;
+    align-self: center;
+  }
+  .expenses {
+    background-color: white;
+    border-radius: 15px;
+  }
+  .expenses .textContent {
+    padding: 6%;
+  }
+  .expenses .textContent h1 {
+    font-size: 20px;
+  }
+  .expenses .textContent .week_expenses .mon div, .expenses .textContent .week_expenses .tue div, .expenses .textContent .week_expenses .wed div, .expenses .textContent .week_expenses .thu div, .expenses .textContent .week_expenses .fri div, .expenses .textContent .week_expenses .sat div, .expenses .textContent .week_expenses .sun div {
+    width: 25px;
+    margin-top: 60px;
+  }
+  .expenses .textContent .week_expenses .mon div:hover h4, .expenses .textContent .week_expenses .tue div:hover h4, .expenses .textContent .week_expenses .wed div:hover h4, .expenses .textContent .week_expenses .thu div:hover h4, .expenses .textContent .week_expenses .fri div:hover h4, .expenses .textContent .week_expenses .sat div:hover h4, .expenses .textContent .week_expenses .sun div:hover h4 {
+    margin-top: -25px;
+    padding: 2px;
+    margin-left: -6px;
+  }
+  .expenses .textContent .week_expenses .mon p, .expenses .textContent .week_expenses .tue p, .expenses .textContent .week_expenses .wed p, .expenses .textContent .week_expenses .thu p, .expenses .textContent .week_expenses .fri p, .expenses .textContent .week_expenses .sat p, .expenses .textContent .week_expenses .sun p {
+    color: rgb(165, 165, 165);
+    font-weight: 700;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .expenses .textContent .week_expenses .mon div {
+    height: 30px;
+  }
+  .expenses .textContent .week_expenses .tue div {
+    height: 80px;
+  }
+  .expenses .textContent .week_expenses .wed div {
+    height: 115px;
+  }
+  .expenses .textContent .week_expenses .thu div {
+    height: 73px;
+  }
+  .expenses .textContent .week_expenses .fri div {
+    height: 55px;
+  }
+  .expenses .textContent .week_expenses .sat div {
+    height: 95px;
+  }
+  .expenses .textContent .week_expenses .sun div {
+    height: 60px;
+  }
+  .expenses .balance {
+    display: flex;
+    justify-content: space-between;
+  }
+  .expenses .balance .total p {
+    color: gray;
+    font-size: 15px;
+  }
+  .expenses .balance .total h3 {
+    font-size: 30px;
+  }
+  .expenses .balance .last_month h6 {
+    font-size: 15px;
+    margin-top: 16px;
+  }
+  .expenses .balance .last_month p {
+    color: gray;
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=styles.css.map */

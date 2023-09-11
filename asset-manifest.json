@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-expenses-component/static/css/main.d726bc56.css",
+    "main.js": "/react-expenses-component/static/js/main.601f790a.js",
+    "index.html": "/react-expenses-component/index.html",
+    "static/media/logo.svg": "/react-expenses-component/static/media/logo.99d5b9138a1a64cc6858cdac9a9d3bd4.svg",
+    "main.d726bc56.css.map": "/react-expenses-component/static/css/main.d726bc56.css.map",
+    "main.601f790a.js.map": "/react-expenses-component/static/js/main.601f790a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d726bc56.css",
+    "static/js/main.601f790a.js"
+  ]
+}
